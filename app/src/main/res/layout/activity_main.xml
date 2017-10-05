@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daulet.lab1test.MainActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/imageBackground" />
+
+    <Button
+        android:id="@+id/buttonFacebook"
+        android:layout_width="167dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/facebookBorder"
+        android:contentDescription="Sign In with Facebook"
+        android:text="Sign In with Facebook"
+        android:textColor="#fff"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="167dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Email"
+        android:textAlignment="center"
+        android:textColor="#bdbdbd"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFacebook" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="167dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textColor="#bdbdbd"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="222dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/borderSignin"
+        android:text="Sign In"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        tools:layout_editor_absoluteX="96dp" />
+
+    <ImageView
+        android:id="@+id/imageViewFacebook"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:src="@drawable/facebook"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <ImageView
+        android:id="@+id/imageViewEmail"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/iconsm"
+        app:layout_constraintRight_toLeftOf="@+id/editTextEmail"
+        app:layout_constraintTop_toTopOf="@+id/editTextEmail" />
+
+    <ImageView
+        android:id="@+id/imageViewPass"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        app:layout_constraintRight_toLeftOf="@+id/editTextPassword"
+        app:layout_constraintTop_toTopOf="@+id/editTextPassword"
+        app:srcCompat="@drawable/iconsl" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Not registered yet?"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageBackground"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Sign UP"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="141dp"
+        android:layout_height="109dp"
+        app:srcCompat="@drawable/dota"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageBackground"
+        android:layout_marginTop="30dp"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:text="Dota2"
+        android:textColor="#000"
+        android:textSize="34sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonFacebook"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+</android.support.constraint.ConstraintLayout>
